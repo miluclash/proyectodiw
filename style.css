@@ -56,6 +56,8 @@ nav .profile-img-nav-container img {
     object-position: center;
 }
 
+
+
 .img-nav {
     width: 100%;
     /* height: 100%;
@@ -63,6 +65,9 @@ nav .profile-img-nav-container img {
     object-position: center;
     border-radius: 50%; */
 }
+
+
+
 
 .text {
 
@@ -109,6 +114,13 @@ nav .profile-img-nav-container img {
 .item {
     border-radius: 1rem;
     overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease;
+
+    &:hover {
+        transform: scale(1.2);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
 }
 
 .item img {
@@ -180,4 +192,26 @@ nav .profile-img-nav-container img {
         padding: 20px;
         text-align: center;
     }
+}
+
+
+@media (min-width: 1200px) {
+    .menu-floating {
+        display: none;
+    }
+}
+
+.flouting-option {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.flouting-option .upload {
+    color: #CBDFBD;
+    background-color: 283044;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
