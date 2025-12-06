@@ -103,9 +103,8 @@ nav .profile-img-nav-container img {
 }
 
 .welcome .mosaico {
-    /* display: none; */
+    display: none;
     width: 100%;
-    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(3, 1fr);
     gap: .5rem;
@@ -259,6 +258,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+
+    .welcome .mosaico {
+        display: grid;
+    }
 
     .search-bar {
         display: block;
